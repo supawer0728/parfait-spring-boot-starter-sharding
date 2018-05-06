@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "name": "named-routing-data-source",
+      "type": "com.parfait.study.starter.namedroutingdatasource.properties.NamedRoutingDataSourceGlobalProperties",
+      "sourceType": "com.parfait.study.starter.namedroutingdatasource.properties.NamedRoutingDataSourceGlobalProperties"
+    },
+    {
+      "name": "named-routing-data-source.data-sources",
+      "type": "java.util.List<com.parfait.study.starter.namedroutingdatasource.properties.NamedRoutingDataSourceTargetProperties>",
+      "sourceType": "com.parfait.study.starter.namedroutingdatasource.properties.NamedRoutingDataSourceGlobalProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "named-routing-data-source.enabled",
+      "type": "java.lang.Boolean",
+      "description": "NamedRoutingDataSource 자동 설정 여부",
+      "defaultValue": false
+    },
+    {
+      "name": "named-routing-data-source.default-data-source",
+      "type": "java.lang.String",
+      "description": "기본으로 사용할 DataSource의 이름",
+      "defaultValue": false
+    },
+    {
+      "name": "named-routing-data-source.slave-suffix",
+      "type": "java.lang.String",
+      "description": "slave DataSource에 사용할 suffix 문자열",
+      "defaultValue": "-slave"
+    },
+    {
+      "name": "named-routing-data-source.data-sources",
+      "type": "java.util.List<com.parfait.study.starter.namedroutingdatasource.properties.NamedRoutingDataSourceTargetProperties>",
+      "sourceType": "com.parfait.study.starter.namedroutingdatasource.properties.NamedRoutingDataSourceGlobalProperties",
+      "description": "NamedDataSource 상세 설정"
+    }
+  ],
+  "hints": [
+    {
+      "name": "named-routing-data-source.data-sources",
+      "providers": [
+        {
+          "name": "any"
+        }
+      ]
+    }
+  ]
+}
