@@ -1,4 +1,4 @@
-package com.parfait.study.starter.sharding;
+package com.parfait.study.starter.namedroutingdatasource;
 
 import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
